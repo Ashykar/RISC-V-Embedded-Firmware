@@ -82,7 +82,7 @@ The provided code establishes a classic three-tier embedded software architectur
 * Telemetry Sampling: gpio_read(BTN_PIN) checks the state of pin 3. The simulation returns a hardcoded high logic state (1), which is captured in the variable button_state.
 * Data Processing: The app writes Button state: 1 directly to the display terminal.
 * Safe State: gpio_write(LED_PIN, 0) safely turns off the LED to conserve power.
-* Teardown Phase: The program hits its final branch on page 2, reporting clean software termination with an exit code of 0.
+* Teardown Phase: The program hits its final branch, reporting clean software termination with an exit code of 0.
   
 ---
 
